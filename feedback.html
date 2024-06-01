@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="About Me Image.css">
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="top_button.css">
+    <link rel="stylesheet" href="copyright.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital@0;1&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="website icon.png" type="image/png">
+</head>
+
+<style>
+    .shadow {
+        text-shadow: 5px 2px 4px #000000;
+    }
+
+    .Container.animated {
+        animation: fadeIn 2s;
+    }
+
+    body {
+        background-image: url('Background-image-3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Custom popup styles */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background: white;
+        border: 2px solid black;
+        z-index: 1000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+    }
+
+    .popup h2 {
+        margin: 0;
+    }
+
+    .popup button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 500;
+    }
+</style>
+
+<body style="background-image: url('Background-image-3.jpg'); background-size: 100vw 100vh; background-repeat: no-repeat; margin: 0; padding: 0;">
+
+    <header>
+        <img src="banner 8.png" style="width: 100%" class="banner">
+        <nav class="Menu">
+            <div class="Choices">
+                <a href="home page.html"><b>Home</a></b>
+                <a href="about me.html"><b>About Me</a></b>
+                <a href="educational background.html"><b>Educational Background</a></b>
+                <a href="hobbies and interest.html"><b>Interests</a></b>
+                <a href="trivias.html"><b>Trivias</a></b>
+                <div class="dropdown">
+                    <button class="dropbtn"><b>Gallery</b><span class="chevron">&#9660;</span></button>
+                    <div class="dropdown-content">
+                        <a href="gallery me.html"><b>Me & Friends</a></b>
+                        <a href="gallery family.html"><b>Family Gallery</a></b>
+                    </div>
+                </div>
+                <a href="feedback.html"><b>Feedback</a></b>
+            </div>
+            <div class="social-media-icons">
+                <a href="https://www.linkedin.com/in/imeer-hafiz-isyraf-b6582b301/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/usernamewastaken0_0/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=61551690045565" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/Penguin4Lifes" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </nav>
+    </header>
+
+<div class="Container">
+    <div class="shadow">
+        <p style="font-family: Montserrat, sans-serif; font-size: 50px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 10px; margin: 0; text-shadow: 5px 2px 4px #000000; padding-top: 20px"><u>Feedback Form</u></p>
+    </div>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 10px; margin: 0; text-shadow: 5px 2px 4px #000000; padding-top: 20px">Please fill in the form below to provide feedback on my personal website.</p>
+    <div class="form" style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; margin: 0; text-shadow: 5px 2px 4px #000000; padding-top: 10px">
+        <form action="mailto:imeerhafiz@gmail.com" method="post" enctype="text/plain">
+            
+            <p>Personal Information (Optional)</p>
+            <label for="fullname">Name:</label><br>
+            <input type="text" id="fullname" name="fullname" class="input-box"><br><br>
+            
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" class="input-box"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" class="input-box"><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" class="input-box"><br><br>
+
+            <p>Gender (Optional):</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <p>Rate the following aspects of my personal website
+                (1-5):</p>
+
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="content">Content:</label></td>
+                            <td>
+                                <select id="content" name="content">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="design">Design:</label></td>
+                            <td>
+                                <select id="design" name="design">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="animation">Animation:</label></td>
+                            <td>
+                                <select id="animation" name="animation">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="experience">Experience in Navigating:</label></td>
+                            <td>
+                                <select id="experience" name="experience">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="multimedia">Multimedia Elements:</label></td>
+                            <td>
+                                <select id="multimedia" name="multimedia">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="interface">User Interface:</label></td>
+                            <td>
+                                <select id="interface" name="interface">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <p>Comment (Optional):</p>
+                <p style="font-size: 15px;">Please provide any additional comments or suggestions for improvement:</p>
+                <textarea id="comment" name="comment" rows="8" cols="50" class="textarea"></textarea><br><br>            
+    
+                <input type="submit" value="Send" class="button">
+                <input type="reset" value="Reset" class="button">
+            </form>
+        </div>
+    </div>
+    
+    <div class="popup" id="popup">
+        <h2>Submitted successfully!</h2>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    
+    <a href="#" class="back-to-top">
+        <span class="material-icons">arrow_upward</span>
+    </a>
+
+    <div class="copyright" id="lastModified">
+        <footer>© 2024 Imeer Hafiz Isyraf. All rights reserved.</footer>
+    </div>
+
+    <script>
+        // Sticky navbar functionality
+        window.onscroll = function() {
+            stickyNavbar();
+        };
+    
+        var navbar = document.querySelector(".Menu");
+        var sticky = navbar.offsetTop;
+    
+        function stickyNavbar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    
+        // Display last modified date
+        window.onload = function() {
+            var latestDate = new Date(document.lastModified);
+            var formattedDate = latestDate.toLocaleString();
+            document.getElementById("lastModified").innerHTML = "© 2024 Imeer Hafiz Isyraf. All rights reserved. Last update: " + formattedDate;
+        };
+    </script>  
+    
+</body>
+    
+</html>
+    
